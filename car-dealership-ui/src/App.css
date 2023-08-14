@@ -1,0 +1,97 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap');
+
+
+.App {
+  text-align: center;
+  padding: 0px 136px 0px 136px;
+  font-family: lexend;
+}
+
+/* Navbar */
+
+.navbar-brand {
+  padding-right: 8rem;
+}
+
+.nav-item {
+  padding: 0 20px 0 20px;
+  ;
+}
+
+
+.nav-link {
+  font-size: 18px;
+  font-weight: 400;
+  color: #667085;
+}
+
+
+
+.home-link {
+  font-weight: bold;
+}
+
+
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+.App-header {
+  background-color: #FFFFFF;
+  padding: 36px 0px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.App-link {
+  /* color: #61dafb; */
+}
+
+/* @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+
+@media (max-width: 768px) {
+  .App {
+    text-align: center;
+    padding: 0px;
+    font-family: lexend;
+  }
+
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+  }
+  .dropdown-menu {
+    width : 40%;
+    text-align: center;
+  }
+
+  .nav-link {
+    width: 50%
+  }
+
+  #home-link {
+    border-bottom: 2px solid black;
+  }
+  
+}
+
+@media (min-width: 769px) {
+  #home-link {
+    width: 100px;
+    border-bottom: 2px solid black;
+  }
+}
