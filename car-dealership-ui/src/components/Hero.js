@@ -73,7 +73,7 @@ function Hero() {
             </div>
           </Stack>
         </Col>
-        <Col lg="6" style={{ paddingTop: "20%" }}>
+        <Col lg="6" className="car-container">
           <div className="d-flex flex-column position-relative">
             <p
               className="position-absolute top-0 start-50 translate-middle"

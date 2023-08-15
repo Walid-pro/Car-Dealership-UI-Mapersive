@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Mobiling from "./components/Mobiling"
+import About from "./components/About"
 import Rectangle from "./Assets/rectangle-bg.png"
 
 function App() {
@@ -18,6 +19,8 @@ function App() {
       <Hero />
       </div>
       <Mobiling />
+      <About />
+
     </div>
   );
 }

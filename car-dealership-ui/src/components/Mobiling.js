@@ -25,31 +25,24 @@ function Mobiling() {
             }}
           >
             <Stack >
-              <div
-             
-                style={{
-                  margin: "40px",
-                  padding: "80px 10px 10px 10px ",
-                  border: "2px dashed white",
-                }}
-              >
+              <div className="mobiling-body">
                 <div className="px-2">
                   <h2>Information on data processing</h2>
                 </div>
                 <div className="px-2">
-                  <p style={{fontSize: "14px"}}>
+                  <p className="mobiling-text">
                     On our website we provide content from Storystream. To view
                     this content, you must agree to the data processing by
                     storystream.
                   </p>
                 </div>
-                <div className="px-2 pb-4 d-flex">
-                  <Button className="mobiling-btn me-4 p-2">
+                <div className="px-2">
+                  <Button className="mobiling-btn mb-4 me-2 p-2">
                     <FontAwesomeIcon icon={faChevronRight} className="me-3"/>
                     <span>Agree</span>
                   </Button>{" "}
-                  <Button className="mobiling-btn p-2">
-                    <FontAwesomeIcon icon={faChevronRight} />
+                  <Button className="mobiling-btn mb-4 p-2">
+                    <FontAwesomeIcon icon={faChevronRight} className="me-3"/>
                     <span>Information on data privacy</span>
                   </Button>
                 </div>

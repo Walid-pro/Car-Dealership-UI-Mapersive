@@ -14,6 +14,7 @@
   }
 } */
 
+
 /* App */
 .App {
   text-align: start;
@@ -29,10 +30,9 @@
 }
 
 
-/* Header & Hero container */
-
-/* Navbar */
-.App-header {
+/* Header & Hero csection
+ */
+ .App-header {
   background-color: transparent;
   padding: 36px 136px;
   flex-direction: column;
@@ -40,6 +40,8 @@
   justify-content: center;
   color: white;
 }
+
+/* Navbar */
 
 .nav-link {
   font-size: 18px;
@@ -52,28 +54,12 @@
 }
 /* Hero section */
 
-.hero-radial-bg {
-  padding: 100px 136px;
-  background: radial-gradient(#e4ecf4, #f4f4f4);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: -1;
-  position: relative;
-}
 .car-slider {
   z-index: 9;
   position: relative;
 }
 
-.usp-header {
-  width: 700px;
-  font-size: 70px;
-  font-weight: 600;
-  text-align: start;
-  line-height: 100px;
-  color: #344054;
-}
+
 
 .usp-subheading {
   font-size: 24px;
@@ -87,15 +73,28 @@
 .mobiling-title,
 .about-title {
   font-size: 36px;
-  font-weight: 400;
+  font-weight: 600;
   text-align: start;
   line-height: 45px;
   color: #344054;
 }
 
-.car-name {
-  margin: 50px 0 0 0;
+.about-subheading {
+  font-size: 26px;
+  font-weight: 600;
+  text-align: start;
+  line-height: 45px;
+  color: #344054;
 }
+
+.about-text {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: start;
+  line-height: 30px;
+  color: #344054;
+}
+
 
 
 .car-spec-name {
@@ -115,33 +114,13 @@
   color: #667085;
 }
 
-tr,
-td {
-  text-align: start;
-}
 
 /* Carousel */
 .carousel-control-prev,
 .carousel-control-next {
   position: relative;
 }
-.carousel-control-prev-icon {
-  position: absolute;
-  color: #667085;
-  border: 2px solid #667085;
-  border-radius: 50%;
-  right: -130px;
-  top: 350px;
-}
 
-.carousel-control-next-icon {
-  position: absolute;
-  color: #667085;
-  border: 2px solid #667085;
-  border-radius: 50%;
-  right: 130px;
-  top: 350px;
-}
 
 .carousel-indicators {
   visibility: hidden;
@@ -150,8 +129,9 @@ td {
 
 /* Mobiling section */
 
-.mobiling-section {
-  padding: 30px 136px;
+
+.mobiling-text {
+  font-size: 14px
 }
 
 .mobiling-btn {
@@ -162,14 +142,21 @@ td {
 
 .mobiling-btn span {
   font-size: 16px;
+  text-align: start;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  
   /* Header & Hero container */
   .wrapper {
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
+  }
+
+  .App-header {
+    background-color: transparent;
+    padding: 20px 10px;
   }
 
   .navbar-nav {
@@ -190,16 +177,83 @@ td {
   }
 
   /* Hero section*/
+
+  .hero-radial-bg {
+    padding: 20px 10px 100px 10px;
+    background: radial-gradient(#e4ecf4, #f4f4f4);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    position: relative;
+  }
+
+  .mobiling-section, .about-section {
+    padding: 20px 10px;
+  }
+
+  .mobiling-body {
+    margin: 20px;
+    padding: 30px 0 0;
+    border: 2px dashed #ffffff;
+  }
+
+  .mobiling-btn {
+    width: 100%;
+  }
+
+  .mobiling-btn span {
+    font-size: 14px;
+  }
+
+  .about-text {
+    font-size: 14px;
+    text-align: justify;
+  }
+
   .usp-header {
-    font-size: 30px;
+    font-size: 45px;
     font-weight: 600;
     text-align: start;
-    line-height: 100px;
+    line-height: 50px;
+    margin: 30px 0 0 0;
     color: #344054;
+  }
+
+  .usp-subheading {
+    margin: 0
+  }
+
+  .car-name {
+    margin: 0;
+  }
+
+  .car-container {
+    padding: 0;
+  }
+
+  /* Car Carousel */
+  
+  .carousel-control-prev-icon {
+    position: absolute;
+    color: #667085;
+    border: 2px solid #667085;
+    border-radius: 50%;
+    right: -100px;
+    top: 250px;
+  }
+  
+  .carousel-control-next-icon {
+    position: absolute;
+    color: #667085;
+    border: 2px solid #667085;
+    border-radius: 50%;
+    right: 100px;
+    top: 250px;
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 
   /* Navbar */
 
@@ -214,4 +268,72 @@ td {
     width: 100px;
     border-bottom: 2px solid black;
   }
+  
+  /* Hero Section */
+
+  .hero-radial-bg {
+    padding: 100px 136px;
+    background: radial-gradient(#e4ecf4, #f4f4f4);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    position: relative;
+  }
+
+  .usp-header {
+    width: 700px;
+    font-size: 70px;
+    font-weight: 600;
+    text-align: start;
+    line-height: 100px;
+    color: #344054;
+  }
+
+  .car-name {
+    margin: 50px 0 0 0;
+  }
+
+  .car-container {
+    padding-top: 20%;
+  }
+
+  /* Car Carousel */
+
+  .carousel-control-prev-icon {
+    position: absolute;
+    color: #667085;
+    border: 2px solid #667085;
+    border-radius: 50%;
+    right: -130px;
+    top: 350px;
+  }
+  
+  .carousel-control-next-icon {
+    position: absolute;
+    color: #667085;
+    border: 2px solid #667085;
+    border-radius: 50%;
+    right: 130px;
+    top: 350px;
+  }
+
+  .mobiling-section, .about-section {
+    padding: 30px 136px;
+  }
+
+  .mobiling-body {
+    margin: 40px;
+    padding: 80px 10px 10px 10px ;
+    border: 2px dashed #ffffff;
+  }
+
+
+  .mobiling-text {
+    font-size: 14px;
+    width: 70%;
+  }
+  
+
+  
 }
