@@ -1,57 +1,9 @@
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap");
 
-
-.App {
-  text-align: center;
-  padding: 0px 136px 0px 136px;
-  font-family: lexend;
-}
-
-/* Navbar */
-
-.navbar-brand {
-  padding-right: 8rem;
-}
-
-.nav-item {
-  padding: 0 20px 0 20px;
-  ;
-}
-
-
-.nav-link {
-  font-size: 18px;
-  font-weight: 400;
-  color: #667085;
-}
-
-
-
-.home-link {
-  font-weight: bold;
-}
-
-
-
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* .App-link {
+  color: #61dafb;
 } */
-
-.App-header {
-  background-color: #FFFFFF;
-  padding: 36px 0px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-
-.App-link {
-  /* color: #61dafb; */
-}
 
 /* @keyframes App-logo-spin {
   from {
@@ -62,12 +14,162 @@
   }
 } */
 
+/* App */
+.App {
+  text-align: start;
+  font-family: lexend;
+}
+
+/* Wrapper */
+.wrapper {
+  background-size: 25%;
+  background-position-x: 80%;
+  background-repeat: no-repeat;
+  z-index: 100;
+}
+
+
+/* Header & Hero container */
+
+/* Navbar */
+.App-header {
+  background-color: transparent;
+  padding: 36px 136px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.nav-link {
+  font-size: 18px;
+  font-weight: 400;
+  color: #667085;
+}
+
+.home-link {
+  font-weight: bold;
+}
+/* Hero section */
+
+.hero-radial-bg {
+  padding: 100px 136px;
+  background: radial-gradient(#e4ecf4, #f4f4f4);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  position: relative;
+}
+.car-slider {
+  z-index: 9;
+  position: relative;
+}
+
+.usp-header {
+  width: 700px;
+  font-size: 70px;
+  font-weight: 600;
+  text-align: start;
+  line-height: 100px;
+  color: #344054;
+}
+
+.usp-subheading {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: justify;
+  line-height: 30px;
+  color: #98a2b3;
+}
+
+.car-name,
+.mobiling-title,
+.about-title {
+  font-size: 36px;
+  font-weight: 400;
+  text-align: start;
+  line-height: 45px;
+  color: #344054;
+}
+
+.car-name {
+  margin: 50px 0 0 0;
+}
+
+
+.car-spec-name {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: #98a2b3;
+}
+
+.car-spec-value {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #667085;
+}
+
+tr,
+td {
+  text-align: start;
+}
+
+/* Carousel */
+.carousel-control-prev,
+.carousel-control-next {
+  position: relative;
+}
+.carousel-control-prev-icon {
+  position: absolute;
+  color: #667085;
+  border: 2px solid #667085;
+  border-radius: 50%;
+  right: -130px;
+  top: 350px;
+}
+
+.carousel-control-next-icon {
+  position: absolute;
+  color: #667085;
+  border: 2px solid #667085;
+  border-radius: 50%;
+  right: 130px;
+  top: 350px;
+}
+
+.carousel-indicators {
+  visibility: hidden;
+}
+
+
+/* Mobiling section */
+
+.mobiling-section {
+  padding: 30px 136px;
+}
+
+.mobiling-btn {
+  background: linear-gradient(#344054,#667085) ;
+  border-color: #667085 !important;
+  border-radius: 0px !important;
+}
+
+.mobiling-btn span {
+  font-size: 16px;
+}
 
 @media (max-width: 768px) {
-  .App {
-    text-align: center;
-    padding: 0px;
-    font-family: lexend;
+  /* Header & Hero container */
+  .wrapper {
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
   }
 
   .navbar-nav {
@@ -75,21 +177,39 @@
     align-items: center;
   }
   .dropdown-menu {
-    width : 40%;
+    width: 40%;
     text-align: center;
   }
 
   .nav-link {
-    width: 50%
+    width: 50%;
   }
 
   #home-link {
     border-bottom: 2px solid black;
   }
-  
+
+  /* Hero section*/
+  .usp-header {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: start;
+    line-height: 100px;
+    color: #344054;
+  }
 }
 
 @media (min-width: 769px) {
+
+  /* Navbar */
+
+  .navbar-brand {
+    padding-right: 8rem;
+  }
+
+  .nav-item {
+    padding: 0 20px 0 20px;
+  }
   #home-link {
     width: 100px;
     border-bottom: 2px solid black;
