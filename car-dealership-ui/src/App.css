@@ -196,7 +196,7 @@ footer {
   font-size: 16px;
 }
 
-/* Small screen Breakpoint */
+/* Small and extra small screen Breakpoints */
 
 @media screen and (max-width: 768px) {
   /* 1- Header section */
@@ -258,9 +258,9 @@ footer {
     margin: 0;
   }
 
-  /* .car-container {
+  .car-container {
     padding: 50px;
-  } */
+  }
 
   /* Carousel controls */
 
@@ -325,6 +325,8 @@ footer {
 
 /* Medium screen breakpoint */
 @media screen and (min-width: 768px) {
+
+  /* 1 - Header section */
   .App-header {
     padding: 0 40px;
   }
@@ -338,6 +340,8 @@ footer {
   #home-link {
     width: 100px;
   }
+
+  /* 2- Hero ection */
 
   .hero-section,
   .mobiling-section,
@@ -377,7 +381,7 @@ footer {
 
 }
 
-/* Large and extra large Breakpoints */
+/* Large and extra large screens Breakpoints */
 @media screen and (min-width: 992px) {
   /* 1- Header section */
 .App-header {

@@ -6,24 +6,24 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-import Image from "react-bootstrap/Image"
-import star from "../Assets/svg/star.svg"
-import { useEffect } from "react"
-
+import Image from "react-bootstrap/Image";
+import star from "../Assets/svg/star.svg";
+import { useEffect } from "react";
 
 function Hero() {
-
-    useEffect(() => {
-        // Get text
-        const text = document.querySelector(".curved-text p");
-        // Assign a new value of text with rotated chars
-        text.innerHTML = text.innerText.split("").map(
-            (char, i) =>
-            // Style each char with a rotation angle
-            `<span style="transform:rotate(${i * 12}deg)">${char}</span>`
-        ).join("")
-    })
-
+  useEffect(() => {
+    // Get text
+    const text = document.querySelector(".curved-text p");
+    // Assign a new value of text with rotated chars
+    text.innerHTML = text.innerText
+      .split("")
+      .map(
+        (char, i) =>
+          // Style each char with a rotation angle
+          `<span style="transform:rotate(${i * 14}deg)">${char}</span>`
+      )
+      .join("");
+  });
 
   return (
     <div className="hero-section">
@@ -31,7 +31,7 @@ function Hero() {
         <Col lg="6">
           <Stack gap={3}>
             <div className="p-2">
-              <p class="usp-header">Best Car For Your Performance</p>
+              <p className="usp-header">Best Car For Your Performance</p>
             </div>
             <div className="p-2">
               <p className="usp-subheading">
@@ -50,7 +50,10 @@ function Hero() {
                     id="search-input"
                     className="flex-fill"
                     placeholder="search"
-                    style={{ borderRadius: "8px 0 0 8px" , padding: "10px 20px"}}
+                    style={{
+                      borderRadius: "8px 0 0 8px",
+                      padding: "10px 20px",
+                    }}
                   />
                   <Button
                     variant="primary"
@@ -64,24 +67,24 @@ function Hero() {
               </Form>
             </div>
             <div className="p-2">
-              <p class="car-name">BMW Series 3 BLUE</p>
+              <p className="car-name">BMW Series 3 BLUE</p>
             </div>
             <div className="text-align-start p-2">
-              <div class="d-flex flex-row mb-3">
-                <div class="p-2">
-                  <div class="d-flex flex-column mb-3">
+              <div className="d-flex flex-row mb-3">
+                <div className="p-2">
+                  <div className="d-flex flex-column mb-3">
                     <div className="car-spec-name">Base Price</div>
                     <div className="car-spec-value">$ 41.87k</div>
                   </div>
                 </div>
-                <div class="p-2">
-                  <div class="d-flex flex-column mb-3">
+                <div className="p-2">
+                  <div className="d-flex flex-column mb-3">
                     <div className="car-spec-name">Power</div>
                     <div className="car-spec-value">365 HP</div>
                   </div>
                 </div>
-                <div class="p-2">
-                  <div class="d-flex flex-column mb-0">
+                <div className="p-2">
+                  <div className="d-flex flex-column mb-0">
                     <div className="car-spec-name">Engine</div>
                     <div className="car-spec-value">362 V6</div>
                   </div>
@@ -92,7 +95,6 @@ function Hero() {
           </Stack>
         </Col>
         <Col lg="6" className="car-container">
-        
           <div className="d-flex flex-column justify-content-center position-relative">
             <p
               className="position-absolute top-0 start-50 translate-middle"
@@ -100,12 +102,11 @@ function Hero() {
             >
               {/* <Image src={curvedText} /> */}
               <div className="circle-bg">
-                <Image src={star} className="star-icon"/>
+                <Image src={star} className="star-icon" />
                 <div className="curved-text">
-                    <p>FOR TIME ROAD AHEAD BUILT</p>
+                  <p>FOR TIME ROAD AHEAD BUILT</p>
                 </div>
               </div>
-
             </p>
             <CarSlider className="car-slider z-5" />
           </div>

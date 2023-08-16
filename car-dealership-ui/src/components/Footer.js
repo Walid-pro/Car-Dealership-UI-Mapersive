@@ -12,30 +12,32 @@ import globeIcon from "../Assets/icons/globe.png";
 import { useEffect } from "react";
 
 function Footer() {
+
+  const homeLink = "car-dealership-react-app/"
   const socialLinks = [
     {
-      key: "1",
-      href: "/",
+      id: "1",
+      href: homeLink,
       icon: twitterIcon,
     },
     {
-      key: "2",
-      href: "/",
+      id: "2",
+      href: homeLink,
       icon: facebookIcon,
     },
     {
-      key: "3",
-      href: "/",
+      id: "3",
+      href: homeLink,
       icon: linkedinIcon,
     },
     {
-      href: "/",
+      id: "4",
+      href: homeLink,
       icon: instagramIcon,
     },
   ];
 
   useEffect(() => {
-
     // Move copyright to normal position on lg breakpoint
     if (window.matchMedia("(min-width: 992px)").matches) {
       document.getElementById("lg-copyright").classList.remove("d-none");
@@ -52,100 +54,96 @@ function Footer() {
     <footer>
       <Row className="align-items-stretch">
         <Col xs={12} md={12} lg={3}>
-          <div class="d-flex flex-column mb-3">
-            <div class="p-2">
+          <div className="d-flex flex-column mb-3">
+            <div className="p-2">
               <Image src={Logo} />
             </div>
-            <div class="p-2">
+            <div className="p-2">
               As an upsale and exclusive chauffeur and limousine service near
               Indonesia, we have been ensuring for more than 15 years that you
               get to your destination on time and safely.
             </div>
-            <div class="p-2 pt-4">
-              <div class="d-flex flex-row mb-3 justify-content-start">
+            <div className="p-2 pt-4">
+              <div className="d-flex flex-row mb-3 justify-content-start">
                 {socialLinks.map((link) => (
-                  <a href={link.href}>
+                  <a key={link.id} href={link.href}>
                     <Image src={link.icon} className="me-4" />
                   </a>
                 ))}
-
-                {/* <div class="p-2">2</div>
-                <div class="p-2">2</div>
-                <div class="p-2">2</div> */}
               </div>
             </div>
           </div>
         </Col>
         <Col xs={12} md={4} lg={3}>
-          <div class="d-flex flex-column mb-3">
-            <div class="p-2 footer-section">Buy Vehicle</div>
-            <div class="p-2">
-              <a className="footer-link" href="/">
+          <div className="d-flex flex-column mb-3">
+            <div className="p-2 footer-section">Buy Vehicle</div>
+            <div className="p-2">
+              <a className="footer-link" href={homeLink}>
                 Find new car
               </a>
             </div>
-            <div class="p-2">
-              <a className="footer-link" href="/">
+            <div className="p-2">
+              <a className="footer-link" href={homeLink}>
                 Current vehicle offers
               </a>
             </div>
-            <div class="p-2">
-              <a className="footer-link" href="/">
+            <div className="p-2">
+              <a className="footer-link" href={homeLink}>
                 Price lists & brochures
               </a>
             </div>
           </div>
         </Col>
         <Col xs={12} md={4} lg={3}>
-          <div class="d-flex flex-column mb-3">
-            <div class="p-2 footer-section">Purchase advice</div>
-            <div class="p-2">
-              <a className="footer-link" href="/">
+          <div className="d-flex flex-column mb-3">
+            <div className="p-2 footer-section">Purchase advice</div>
+            <div className="p-2">
+              <a className="footer-link" href={homeLink}>
                 Book a test drive
               </a>
             </div>
-            <div class="p-2">
-              <a className="footer-link" href="/">
+            <div className="p-2">
+              <a className="footer-link" href={homeLink}>
                 Find a dealer near you
               </a>
             </div>
-            <div class="p-2">
-              <a className="footer-link" href="/">
+            <div className="p-2">
+              <a className="footer-link" href={homeLink}>
                 Find used vehicles
               </a>
             </div>
           </div>
         </Col>
         <Col xs={12} md={4} lg={3}>
-          <div class="d-flex flex-column mb-3">
-            <div class="p-2 footer-section">Customer Service</div>
-            <div class="p-2">
-              <a className="footer-link" href="/">
+          <div className="d-flex flex-column mb-3">
+            <div className="p-2 footer-section">Customer Service</div>
+            <div className="p-2">
+              <a className="footer-link" href={homeLink}>
                 Current service offers
               </a>
             </div>
-            <div class="p-2">
-              <a className="footer-link" href="/">
+            <div className="p-2">
+              <a className="footer-link" href={homeLink}>
                 Online service campaign VIN-checker
               </a>
             </div>
-            <div class="p-2">
-              <a className="footer-link" href="/">
+            <div className="p-2">
+              <a className="footer-link" href={homeLink}>
                 5 Year staf service
               </a>
             </div>
-            <div class="p-2">
-              <a className="footer-link" href="/">
+            <div className="p-2">
+              <a className="footer-link" href={homeLink}>
                 24h roadside assistance
               </a>
             </div>
-            <div class="p-2">
-              <a className="footer-link" href="/">
+            <div className="p-2">
+              <a className="footer-link" href={homeLink}>
                 New and events
               </a>
             </div>
-            <div class="p-2">
-              <a className="footer-link" href="/">
+            <div className="p-2">
+              <a className="footer-link" href={homeLink}>
                 Press relase
               </a>
             </div>
@@ -156,48 +154,48 @@ function Footer() {
 
       <Row className="align-items-stretch">
         <Col xs={12} md={12} lg={4}>
-          <div class="d-flex flex-column mb-3">
-            <div id="lg-copyright" class="p-2 footer-section">
+          <div className="d-flex flex-column mb-3">
+            <div id="lg-copyright" className="p-2 footer-section">
               <span className="footer-link">Copyright 2023 Mobiling Co.</span>
             </div>
           </div>
         </Col>
         <Col xs={6} md={3} lg={2}>
-          <div class="d-flex flex-column mb-3">
-            <div class="p-2 footer-section">
-              <a className="footer-link" href="/">
+          <div className="d-flex flex-column mb-3">
+            <div className="p-2 footer-section">
+              <a className="footer-link" href={homeLink}>
                 Terms of Service
               </a>
             </div>
           </div>
         </Col>
         <Col xs={6} md={3} lg={2}>
-          <div class="d-flex flex-column mb-3">
-            <div class="p-2 footer-section">
-              <a className="footer-link" href="/">
+          <div className="d-flex flex-column mb-3">
+            <div className="p-2 footer-section">
+              <a className="footer-link" href={homeLink}>
                 Privacy Policy
               </a>
             </div>
           </div>
         </Col>
-        <Col xs={6}  md={3} lg={2}>
-          <div class="d-flex flex-column mb-3">
-            <div class="p-2 footer-section">
-              <a className="footer-link" href="/">
+        <Col xs={6} md={3} lg={2}>
+          <div className="d-flex flex-column mb-3">
+            <div className="p-2 footer-section">
+              <a className="footer-link" href={homeLink}>
                 Cookies
               </a>
             </div>
           </div>
         </Col>
         <Col xs={6} md={3} lg={2}>
-          <div class="d-flex flex-column mb-3">
-            <div class="p-2 footer-section">
+          <div className="d-flex flex-column mb-3">
+            <div className="p-2 footer-section">
               <span className="footer-link">
-                <a className="footer-link" href="/">
+                <a className="footer-link" href={homeLink}>
                   <Image src={globeIcon} className="me-2" />
                 </a>
                 <span>English</span>
-                <a className="footer-link" href="/">
+                <a className="footer-link" href={homeLink}>
                   <FontAwesomeIcon icon={faArrowRight} className="ms-2" />
                 </a>
               </span>
@@ -206,8 +204,8 @@ function Footer() {
         </Col>
 
         <Col id="sm-copyright" xs={12} lg={4}>
-          <div class="d-flex flex-column mb-3">
-            <div class="p-2 footer-section">
+          <div className="d-flex flex-column mb-3">
+            <div className="p-2 footer-section">
               <span className="footer-link">Copyright 2023 Mobiling Co.</span>
             </div>
           </div>

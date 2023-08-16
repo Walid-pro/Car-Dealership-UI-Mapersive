@@ -35,7 +35,7 @@ function About() {
         </Col>
         <Col lg="6" className="p-3">
           <div
-            class="container"
+            className="container"
             style={{
               fontSize: "14px",
               height: "100%",
@@ -43,44 +43,44 @@ function About() {
               borderRadius: "30px",
               color: "#344054",
               fontWeight: "600",
-              padding: "10%"
+              padding: "10%",
             }}
           >
-            <div class="row align-items-center h-50">
-              <div class="col-6 mb-2">
-                <div class="flexbox-item text-center">
+            <div className="row align-items-center h-50">
+              <div className="col-6 mb-2">
+                <div className="flexbox-item text-center">
                   <Image src={carIcon} />
                 </div>
-                <div class="flexbox-item text-center">
+                <div className="flexbox-item text-center">
                   From business <br /> to luxuaryclass
                 </div>
               </div>
-              <div class="col-6 mb-2">
-                <div class="flexbox-item text-center">
+              <div className="col-6 mb-2">
+                <div className="flexbox-item text-center">
                   <Image src={locationIcon} />
                 </div>
-                <div class="flexbox-item text-center">
+                <div className="flexbox-item text-center">
                   125 Location
                   <br />
                   in Indonesia
                 </div>
               </div>
             </div>
-            <div class="row align-items-center h-50">
-              <div class="col-6 mb-2">
-                <div class="flexbox-item text-center">
+            <div className="row align-items-center h-50">
+              <div className="col-6 mb-2">
+                <div className="flexbox-item text-center">
                   <Image src={touchScreenIcon} />
                 </div>
-                <div class="flexbox-item text-center">
+                <div className="flexbox-item text-center">
                   Convenient <br />
                   Online Book
                 </div>
               </div>
-              <div class="col-6 mb-2">
-                <div class="flexbox-item text-center">
+              <div className="col-6 mb-2">
+                <div className="flexbox-item text-center">
                   <Image src={clockIcon} />
                 </div>
-                <div class="flexbox-item text-center">
+                <div className="flexbox-item text-center">
                   24/7 Exclusive
                   <br />
                   On the road

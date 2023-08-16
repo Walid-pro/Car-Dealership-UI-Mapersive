@@ -24,7 +24,7 @@ function Mobiling() {
               color: "white",
             }}
           >
-            <Stack >
+            <Stack>
               <div className="mobiling-body">
                 <div className="px-2">
                   <h2>Information on data processing</h2>
@@ -38,11 +38,11 @@ function Mobiling() {
                 </div>
                 <div className="px-2 mobiling-btn-box">
                   <Button className="mobiling-btn mb-4 me-2 p-2">
-                    <FontAwesomeIcon icon={faChevronRight} className="me-3"/>
+                    <FontAwesomeIcon icon={faChevronRight} className="me-3" />
                     <span>Agree</span>
                   </Button>{" "}
                   <Button className="mobiling-btn mb-4 p-2">
-                    <FontAwesomeIcon icon={faChevronRight} className="me-3"/>
+                    <FontAwesomeIcon icon={faChevronRight} className="me-3" />
                     <span>Information on data privacy</span>
                   </Button>
                 </div>
