@@ -16,10 +16,11 @@ function Hero() {
     useEffect(() => {
         // Get text
         const text = document.querySelector(".curved-text p");
-        // Split text
+        // Assign a new value of text with rotated chars
         text.innerHTML = text.innerText.split("").map(
             (char, i) =>
-            `<span style="transform:rotate(${i * 8.5}deg)">${char}</span>`
+            // Style each char with a rotation angle
+            `<span style="transform:rotate(${i * 12}deg)">${char}</span>`
         ).join("")
     })
 
@@ -39,7 +40,7 @@ function Hero() {
               </p>
             </div>
             <div className="p-2">
-              <Form>
+              <Form id="search-form">
                 <Form.Group
                   className="mb-3 d-flex flex-row"
                   controlId="exampleForm.ControlInput1"
@@ -49,7 +50,7 @@ function Hero() {
                     id="search-input"
                     className="flex-fill"
                     placeholder="search"
-                    style={{ borderRadius: "8px 0 0 8px" , padding: "10px 0"}}
+                    style={{ borderRadius: "8px 0 0 8px" , padding: "10px 20px"}}
                   />
                   <Button
                     variant="primary"
@@ -92,7 +93,7 @@ function Hero() {
         </Col>
         <Col lg="6" className="car-container">
         
-          <div className="d-flex flex-column position-relative">
+          <div className="d-flex flex-column justify-content-center position-relative">
             <p
               className="position-absolute top-0 start-50 translate-middle"
               style={{ margin: "5% 0" }}

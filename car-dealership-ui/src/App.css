@@ -1,15 +1,8 @@
 /* Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap");
 
-/* .App-link {
-  color: #61dafb;
-} */
-
-
-
-
 /* App */
-* {
+.App {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -19,18 +12,21 @@
 
 
 
-/* Header & Hero csection
- */
- .App-header {
-  background-color: transparent;
-  padding: 36px 136px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
+/* Wrapper */
+.wrapper {
+  background: radial-gradient(
+    circle,
+    rgba(201, 210, 221, 1) 0%,
+    rgba(237, 241, 244, 1) 30%,
+    rgba(237, 241, 244, 1) 100%
+  );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
-/* Navbar */
+/* Navbar links */
 
 .nav-link {
   font-size: 18px;
@@ -38,23 +34,16 @@
   color: #667085;
 }
 
-.home-link {
-  font-weight: bold;
-}
-/* Hero section */
-
-#search-input::placeholder {
-  color: #98a2b3;
-  padding: 0 20px;
+#home-link {
+  border-bottom: 1px solid black !important;
+  -webkit-text-stroke: 2px #344054;
+  border: #021e35;
+  text-shadow: 0px 3px 3px #344054 ;
 }
 
-.car-slider {
-  z-index: 9;
-  position: relative;
-}
+/* 2- Hero section */
 
-
-
+/* Hero usp */
 .usp-subheading {
   font-size: 24px;
   font-weight: 400;
@@ -63,6 +52,7 @@
   color: #98a2b3;
 }
 
+/* Headings */
 .car-name,
 .mobiling-title,
 .about-title {
@@ -73,23 +63,11 @@
   color: #344054;
 }
 
-.about-subheading {
-  font-size: 26px;
-  font-weight: 600;
-  text-align: start;
-  line-height: 45px;
-  color: #344054;
+/* Search bar */
+#search-input::placeholder {
+  color: #98a2b3;
+  padding: 0 20px;
 }
-
-.about-text {
-  font-size: 18px;
-  font-weight: 600;
-  text-align: start;
-  line-height: 30px;
-  color: #344054;
-}
-
-
 
 .car-spec-name {
   font-size: 16px;
@@ -108,13 +86,38 @@
   color: #667085;
 }
 
+/* Carousel */
+
+.car-slider {
+  z-index: 9;
+  position: relative;
+}
+
+/* Carousel control buttons*/
+.carousel-control-prev,
+.carousel-control-next {
+  position: relative;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  position: absolute;
+  color: #667085;
+  border: 2px solid #667085;
+  border-radius: 50%;
+}
+
+
+.carousel-indicators {
+  visibility: hidden;
+}
+
+/* Curved text */
 
 .circle-bg {
   position: relative;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  /* background: #667085; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,7 +132,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  animation: text-rotate linear 10s infinite
+  animation: text-rotate linear 10s infinite;
 }
 
 .curved-text span {
@@ -142,28 +145,14 @@
   font-weight: bold;
 }
 
-
-/* Carousel */
-.carousel-control-prev,
-.carousel-control-next {
-  position: relative;
-}
-
-
-.carousel-indicators {
-  visibility: hidden;
-}
-
-
-/* Mobiling section */
-
+/* 3- Mobiling section */
 
 .mobiling-text {
   font-size: 14px;
 }
 
 .mobiling-btn {
-  background: linear-gradient(#344054,#667085) ;
+  background: linear-gradient(#344054, #667085);
   border-color: #667085 !important;
   border-radius: 0px !important;
 }
@@ -173,10 +162,27 @@
   text-align: start;
 }
 
+/* 4- About us section */
+.about-subheading {
+  font-size: 26px;
+  font-weight: 600;
+  text-align: start;
+  line-height: 45px;
+  color: #344054;
+}
+
+.about-text {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: start;
+  line-height: 30px;
+  color: #344054;
+}
+
 /* Footer */
 footer {
   background-color: #021e35;
-  color:#ffff;
+  color: #ffff;
 }
 
 .footer-section {
@@ -186,28 +192,18 @@ footer {
 
 .footer-link {
   text-decoration: none;
-  color:#ffff;
+  color: #ffff;
   font-size: 16px;
 }
 
+/* Small screen Breakpoint */
 
-@media (max-width: 767px) {
-  
-  /* Header & Hero container */
+@media screen and (max-width: 768px) {
+  /* 1- Header section */
 
   .App-header {
     background-color: transparent;
     padding: 0 10px;
-  }
-
-  .wrapper {
-    background: radial-gradient(circle, rgba(201,210,221,1) 0%, rgba(237,241,244,1) 30%, rgba(237,241,244,1) 100%);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    padding-bottom: 20%;
-
   }
 
   .navbar-nav {
@@ -215,7 +211,8 @@ footer {
     align-items: flex-start;
   }
 
-  .navbar-collapse, .nav-item {
+  .navbar-collapse,
+  .nav-item {
     text-align: start;
   }
 
@@ -229,10 +226,20 @@ footer {
   }
 
   #home-link {
-    border-bottom: 2px solid black;
+    width: 80px;
   }
 
-  /* Hero section*/
+  /* 2- Hero section - wrapper*/
+
+  .wrapper {
+    padding-bottom: 20%;
+  }
+
+  /* Rectangle background */
+
+  .rectangle-bg {
+    display: none;
+  }
 
   .usp-header {
     font-size: 45px;
@@ -244,13 +251,30 @@ footer {
   }
 
   .usp-subheading {
-    margin: 0
+    margin: 0;
   }
 
   .car-name {
     margin: 0;
   }
 
+  /* .car-container {
+    padding: 50px;
+  } */
+
+  /* Carousel controls */
+
+  .carousel-control-prev-icon {
+    right: -100px;
+    top: 20rem;
+  }
+
+  .carousel-control-next-icon {
+    right: 100px;
+    top: 20rem;
+  }
+
+  /* Curved text */
   .curved-text span {
     position: absolute;
     color: #667085;
@@ -259,42 +283,13 @@ footer {
     transform-origin: 0 50px;
     font-size: 12px;
     font-weight: bold;
-  
   }
 
-  .car-container {
-    padding: 50px;
-  }
-
-    /* Rectangle background */
-
-    .rectangle-bg {
-      display: none;
-    }
-
-
-  /* Car Carousel */
-  
-  .carousel-control-prev-icon {
-    position: absolute;
-    color: #667085;
-    border: 2px solid #667085;
-    border-radius: 50%;
-    right: -100px;
-    top: 300px;
-  }
-  
-  .carousel-control-next-icon {
-    position: absolute;
-    color: #667085;
-    border: 2px solid #667085;
-    border-radius: 50%;
-    right: 100px;
-    top: 300px;
-  }
-
-  /* Mobiling */
-  .hero-section, .mobiling-section, .about-section, footer {
+  /* 3- Mobiling section */
+  .hero-section,
+  .mobiling-section,
+  .about-section,
+  footer {
     padding: 20px 15px;
   }
 
@@ -312,56 +307,120 @@ footer {
     font-size: 14px;
   }
 
+  /* 4- About section */
   .about-text {
     font-size: 14px;
     text-align: justify;
   }
 
-
+  /* 5- Footer */
   .footer-section {
     margin: 0;
   }
+
+  #sm-copyright {
+    text-align: center;
+  }
 }
 
-@media (min-width: 768px) {
+/* Medium screen breakpoint */
+@media screen and (min-width: 768px) {
+  .App-header {
+    padding: 0 40px;
+  }
 
-  /* Navbar */
+  /* Rectangle background */
+
+  .rectangle-bg {
+    display: none;
+  }
+
+  #home-link {
+    width: 100px;
+  }
+
+  .hero-section,
+  .mobiling-section,
+  .about-section,
+  footer {
+    padding: 20px 40px;
+  }
+
+  /* Usp heading */
+
+  .usp-header {
+    font-size: 60px;
+    font-weight: 600;
+    text-align: start;
+    line-height: 50px;
+    margin: 30px 0 0 0;
+    color: #344054;
+  }
+
+  #search-form {
+    width: 50%;
+  }
+
+  .carousel {
+    padding: 0 15%;
+  }
+
+  .carousel-control-prev-icon {
+    right: -200px;
+    top: 28rem;
+  }
+
+  .carousel-control-next-icon {
+    right: 200px;
+    top: 28rem;
+  }
+
+}
+
+/* Large and extra large Breakpoints */
+@media screen and (min-width: 992px) {
+  /* 1- Header section */
+.App-header {
+  background-color: transparent;
+  padding: 36px 136px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
 
   .navbar-brand {
     padding-right: 8rem;
   }
 
-  .nav-item, .nav-link{
+  .nav-item,
+  .nav-link {
     padding: 0 20px 0 20px;
     text-align: center;
   }
 
   #home-link {
     width: 100px;
-    border-bottom: 1px solid black !important;
-    -webkit-text-stroke: 2px #344054;
-    border: #021e35;
-
   }
 
-  
-  /* Hero Section */
-
-    /* Hero section*/
-  
-    .hero-section {
-      padding: 50px 136px;
-      z-index: 2;
-    }
+  /* 2- Hero Section - wrapper*/
 
   .wrapper {
-    background: radial-gradient(circle, rgba(201,210,221,1) 0%, rgba(237,241,244,1) 30%, white 100%);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
     padding-bottom: 8%;
+  }
 
+  /* Rectangle background */
+
+  .rectangle-bg {
+    position: absolute;
+    z-index: 0;
+    height: 100%;
+    left: 60%;
+  }
+
+  .hero-section {
+    padding: 50px 136px;
+    z-index: 2;
   }
 
   .usp-header {
@@ -373,6 +432,10 @@ footer {
     color: #344054;
   }
 
+  #search-form {
+    width: 100%;
+  }
+
   .car-name {
     margin: 50px 0 0 0;
   }
@@ -381,70 +444,56 @@ footer {
     padding-top: 20%;
   }
 
-  /* Rectangle background */
+  /* Carousel */
 
-  .rectangle-bg {
-    position: absolute;
-    z-index: 0;
-    height : 100%;
-    left: 60%
+  .carousel {
+    padding: 0;
   }
-
-  /* Car Carousel */
 
   .carousel-control-prev-icon {
-    position: absolute;
-    color: #667085;
-    border: 2px solid #667085;
-    border-radius: 50%;
     right: -160px;
-    top: 450px;
-  }
-  
-  .carousel-control-next-icon {
-    position: absolute;
-    color: #667085;
-    border: 2px solid #667085;
-    border-radius: 50%;
-    right: 160px;
-    top: 450px;
+    top: 30rem;
   }
 
+  /* Carousel controls */
+  .carousel-control-next-icon {
+    right: 160px;
+    top: 30rem;
+  }
+
+  /* 3- Mobiling section */
   .mobiling-section {
     padding: 50px 136px;
   }
 
   .mobiling-body {
     margin: 40px;
-    padding: 80px 10px 10px 10px ;
+    padding: 80px 10px 10px 10px;
     border: 2px dashed #ffffff;
   }
-
 
   .mobiling-text {
     font-size: 14px;
     width: 70%;
   }
-  
+
+  /* 4- About section */
   .about-section {
     padding: 0 136px 50px;
   }
 
+  /* 5- Footer */
   footer {
     padding: 50px 136px 20px;
   }
-
-  
 }
-
 
 /* Animation Keyframes */
 @keyframes text-rotate {
   from {
-    transform: rotate(0deg)
+    transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg)
+    transform: rotate(360deg);
   }
-  
 }

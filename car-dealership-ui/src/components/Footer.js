@@ -35,12 +35,14 @@ function Footer() {
   ];
 
   useEffect(() => {
-    if (window.matchMedia("(min-width: 768px)").matches) {
+
+    // Move copyright to normal position on lg breakpoint
+    if (window.matchMedia("(min-width: 992px)").matches) {
       document.getElementById("lg-copyright").classList.remove("d-none");
       document.getElementById("sm-copyright").classList.add("d-none");
     }
-
-    if (window.matchMedia("(max-width: 767px)").matches) {
+    // Move copyright to bottom position on sm & md breakpoints
+    if (window.matchMedia("(max-width: 991px)").matches) {
       document.getElementById("sm-copyright").classList.remove("d-none");
       document.getElementById("lg-copyright").classList.add("d-none");
     }
@@ -49,7 +51,7 @@ function Footer() {
   return (
     <footer>
       <Row className="align-items-stretch">
-        <Col xs={12} lg={3}>
+        <Col xs={12} md={12} lg={3}>
           <div class="d-flex flex-column mb-3">
             <div class="p-2">
               <Image src={Logo} />
@@ -74,7 +76,7 @@ function Footer() {
             </div>
           </div>
         </Col>
-        <Col xs={12} md={3}>
+        <Col xs={12} md={4} lg={3}>
           <div class="d-flex flex-column mb-3">
             <div class="p-2 footer-section">Buy Vehicle</div>
             <div class="p-2">
@@ -94,7 +96,7 @@ function Footer() {
             </div>
           </div>
         </Col>
-        <Col xs={12} md={3}>
+        <Col xs={12} md={4} lg={3}>
           <div class="d-flex flex-column mb-3">
             <div class="p-2 footer-section">Purchase advice</div>
             <div class="p-2">
@@ -114,7 +116,7 @@ function Footer() {
             </div>
           </div>
         </Col>
-        <Col xs={12} md={3}>
+        <Col xs={12} md={4} lg={3}>
           <div class="d-flex flex-column mb-3">
             <div class="p-2 footer-section">Customer Service</div>
             <div class="p-2">
@@ -153,14 +155,14 @@ function Footer() {
       <hr style={{ border: "0", borderTop: "2px solid white" }} />
 
       <Row className="align-items-stretch">
-        <Col xs={12} lg={4}>
+        <Col xs={12} md={12} lg={4}>
           <div class="d-flex flex-column mb-3">
             <div id="lg-copyright" class="p-2 footer-section">
               <span className="footer-link">Copyright 2023 Mobiling Co.</span>
             </div>
           </div>
         </Col>
-        <Col xs={6} lg={2}>
+        <Col xs={6} md={3} lg={2}>
           <div class="d-flex flex-column mb-3">
             <div class="p-2 footer-section">
               <a className="footer-link" href="/">
@@ -169,7 +171,7 @@ function Footer() {
             </div>
           </div>
         </Col>
-        <Col xs={6} lg={2}>
+        <Col xs={6} md={3} lg={2}>
           <div class="d-flex flex-column mb-3">
             <div class="p-2 footer-section">
               <a className="footer-link" href="/">
@@ -178,7 +180,7 @@ function Footer() {
             </div>
           </div>
         </Col>
-        <Col xs={6} lg={2}>
+        <Col xs={6}  md={3} lg={2}>
           <div class="d-flex flex-column mb-3">
             <div class="p-2 footer-section">
               <a className="footer-link" href="/">
@@ -187,7 +189,7 @@ function Footer() {
             </div>
           </div>
         </Col>
-        <Col xs={6} lg={2}>
+        <Col xs={6} md={3} lg={2}>
           <div class="d-flex flex-column mb-3">
             <div class="p-2 footer-section">
               <span className="footer-link">

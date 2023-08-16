@@ -36,7 +36,7 @@ function Mobiling() {
                     storystream.
                   </p>
                 </div>
-                <div className="px-2">
+                <div className="px-2 mobiling-btn-box">
                   <Button className="mobiling-btn mb-4 me-2 p-2">
                     <FontAwesomeIcon icon={faChevronRight} className="me-3"/>
                     <span>Agree</span>
