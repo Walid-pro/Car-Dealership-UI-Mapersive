@@ -30,7 +30,7 @@ function Mobiling({ Link }) {
             <Stack>
               <div className="mobiling-body">
                 <div className="px-2">
-                  <h2>Information on data processing</h2>
+                  <h2 style={{textAlign: "left"}}>Information on data processing</h2>
                 </div>
                 <div className="px-2">
                   <p className="mobiling-text">
