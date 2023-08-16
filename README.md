@@ -28,4 +28,4 @@ I used `React`, `html`, `css` and `Bootstrap` to build this project.
 
 ## Approach
 This project is developed as a single page application, each section is built apart as a React component.
-I adopted a mix of inline and external css for the styling this project.
+I adopted a mix of inline and external css for the styling of this project.
