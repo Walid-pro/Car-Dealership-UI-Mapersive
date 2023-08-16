@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Car-Dealership-UI-Mapersive/static/css/main.25ac155e.css",
-    "main.js": "/Car-Dealership-UI-Mapersive/static/js/main.565d77d8.js",
-    "static/js/787.f40ad93e.chunk.js": "/Car-Dealership-UI-Mapersive/static/js/787.f40ad93e.chunk.js",
-    "static/media/bmw-car.png": "/Car-Dealership-UI-Mapersive/static/media/bmw-car.679caac91986ae62f333.png",
-    "static/media/star.svg": "/Car-Dealership-UI-Mapersive/static/media/star.cc006ae388fb4d37890cb3224be41d75.svg",
-    "index.html": "/Car-Dealership-UI-Mapersive/index.html",
-    "main.25ac155e.css.map": "/Car-Dealership-UI-Mapersive/static/css/main.25ac155e.css.map",
-    "main.565d77d8.js.map": "/Car-Dealership-UI-Mapersive/static/js/main.565d77d8.js.map",
-    "787.f40ad93e.chunk.js.map": "/Car-Dealership-UI-Mapersive/static/js/787.f40ad93e.chunk.js.map"
+    "main.css": "/car-dealership-ui-mapersive/static/css/main.25ac155e.css",
+    "main.js": "/car-dealership-ui-mapersive/static/js/main.2eac342b.js",
+    "static/js/787.f40ad93e.chunk.js": "/car-dealership-ui-mapersive/static/js/787.f40ad93e.chunk.js",
+    "static/media/bmw-car.png": "/car-dealership-ui-mapersive/static/media/bmw-car.679caac91986ae62f333.png",
+    "static/media/star.svg": "/car-dealership-ui-mapersive/static/media/star.cc006ae388fb4d37890cb3224be41d75.svg",
+    "index.html": "/car-dealership-ui-mapersive/index.html",
+    "main.25ac155e.css.map": "/car-dealership-ui-mapersive/static/css/main.25ac155e.css.map",
+    "main.2eac342b.js.map": "/car-dealership-ui-mapersive/static/js/main.2eac342b.js.map",
+    "787.f40ad93e.chunk.js.map": "/car-dealership-ui-mapersive/static/js/787.f40ad93e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.25ac155e.css",
-    "static/js/main.565d77d8.js"
+    "static/js/main.2eac342b.js"
   ]
 }
