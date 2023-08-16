@@ -5,13 +5,13 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Image from 'react-bootstrap/Image';
-import logo from "../Assets/dark-logo.png"
+import logo from "../Assets/logo/dark-logo.png"
 
 function NavBar() {
   return (
     <Navbar expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#">
+        <Navbar.Brand href="/">
         <Image src={logo} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -21,22 +21,22 @@ function NavBar() {
             style={{ maxHeight: "100vh" }}
             navbarScroll
           >
-            <Nav.Link id="home-link" href="#action1" style={{fontWeight: "bold", textShadow: " 0.5px 1px"}}>Home</Nav.Link>
+            <Nav.Link id="home-link" href="/">Home</Nav.Link>
             <NavDropdown title="Service" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#service01">Service01</NavDropdown.Item>
+              <NavDropdown.Item href="/">Service01</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#service01">Service02</NavDropdown.Item>
+              <NavDropdown.Item href="/">Service02</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#service01">Service03</NavDropdown.Item>
+              <NavDropdown.Item href="/">Service03</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Product" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#Product01">Product01</NavDropdown.Item>
+              <NavDropdown.Item href="/">Product01</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#Product01">Product02</NavDropdown.Item>
+              <NavDropdown.Item href="/">Product02</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#Product01">Product03</NavDropdown.Item>
+              <NavDropdown.Item href="/">Product03</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#action2">Testimonial</Nav.Link>
+            <Nav.Link href="/">Testimonial</Nav.Link>
           </Nav>
 
             <Button variant="primary" style={{padding: "8px 40px", backgroundColor: "#1A89EC"}}>Sign in</Button>

@@ -5,29 +5,18 @@
   color: #61dafb;
 } */
 
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+
 
 
 /* App */
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   text-align: start;
   font-family: lexend;
 }
 
-/* Wrapper */
-.wrapper {
-  background-size: 25%;
-  background-position-x: 80%;
-  background-repeat: no-repeat;
-  z-index: 100;
-}
 
 
 /* Header & Hero csection
@@ -53,6 +42,11 @@
   font-weight: bold;
 }
 /* Hero section */
+
+#search-input::placeholder {
+  color: #98a2b3;
+  padding: 0 20px;
+}
 
 .car-slider {
   z-index: 9;
@@ -115,6 +109,40 @@
 }
 
 
+.circle-bg {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  /* background: #667085; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.star-icon {
+  position: absolute;
+  width: 100%;
+}
+
+.curved-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+}
+
+.curved-text span {
+  position: absolute;
+  color: #667085;
+  left: 50%;
+  top: -80%;
+  transform-origin: 0 70px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
 /* Carousel */
 .carousel-control-prev,
 .carousel-control-next {
@@ -131,7 +159,7 @@
 
 
 .mobiling-text {
-  font-size: 14px
+  font-size: 14px;
 }
 
 .mobiling-btn {
@@ -145,31 +173,59 @@
   text-align: start;
 }
 
+/* Footer */
+footer {
+  background-color: #021e35;
+  color:#ffff;
+}
+
+.footer-section {
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color:#ffff;
+  font-size: 16px;
+}
+
+
 @media (max-width: 767px) {
   
   /* Header & Hero container */
-  .wrapper {
-    background-size: contain;
-    background-position: right;
-    background-repeat: no-repeat;
-  }
 
   .App-header {
     background-color: transparent;
-    padding: 20px 10px;
+    padding: 0 10px;
+  }
+
+  .wrapper {
+    background: radial-gradient(circle, rgba(201,210,221,1) 0%, rgba(237,241,244,1) 30%, rgba(237,241,244,1) 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-bottom: 20%;
+
   }
 
   .navbar-nav {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
   }
+
+  .navbar-collapse, .nav-item {
+    text-align: start;
+  }
+
   .dropdown-menu {
     width: 40%;
     text-align: center;
   }
 
   .nav-link {
-    width: 50%;
+    width: 30%;
   }
 
   #home-link {
@@ -178,18 +234,68 @@
 
   /* Hero section*/
 
-  .hero-radial-bg {
-    padding: 20px 10px 100px 10px;
-    background: radial-gradient(#e4ecf4, #f4f4f4);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: -1;
-    position: relative;
+  .usp-header {
+    font-size: 45px;
+    font-weight: 600;
+    text-align: start;
+    line-height: 50px;
+    margin: 30px 0 0 0;
+    color: #344054;
   }
 
-  .mobiling-section, .about-section {
-    padding: 20px 10px;
+  .usp-subheading {
+    margin: 0
+  }
+
+  .car-name {
+    margin: 0;
+  }
+
+  .curved-text span {
+    position: absolute;
+    color: #667085;
+    left: 50%;
+    top: -50%;
+    transform-origin: 0 50px;
+    font-size: 12px;
+    font-weight: bold;
+  
+  }
+
+  .car-container {
+    padding: 50px;
+  }
+
+    /* Rectangle background */
+
+    .rectangle-bg {
+      display: none;
+    }
+
+
+  /* Car Carousel */
+  
+  .carousel-control-prev-icon {
+    position: absolute;
+    color: #667085;
+    border: 2px solid #667085;
+    border-radius: 50%;
+    right: -100px;
+    top: 250px;
+  }
+  
+  .carousel-control-next-icon {
+    position: absolute;
+    color: #667085;
+    border: 2px solid #667085;
+    border-radius: 50%;
+    right: 100px;
+    top: 250px;
+  }
+
+  /* Mobiling */
+  .hero-section, .mobiling-section, .about-section, footer {
+    padding: 20px 15px;
   }
 
   .mobiling-body {
@@ -211,45 +317,9 @@
     text-align: justify;
   }
 
-  .usp-header {
-    font-size: 45px;
-    font-weight: 600;
-    text-align: start;
-    line-height: 50px;
-    margin: 30px 0 0 0;
-    color: #344054;
-  }
 
-  .usp-subheading {
-    margin: 0
-  }
-
-  .car-name {
+  .footer-section {
     margin: 0;
-  }
-
-  .car-container {
-    padding: 0;
-  }
-
-  /* Car Carousel */
-  
-  .carousel-control-prev-icon {
-    position: absolute;
-    color: #667085;
-    border: 2px solid #667085;
-    border-radius: 50%;
-    right: -100px;
-    top: 250px;
-  }
-  
-  .carousel-control-next-icon {
-    position: absolute;
-    color: #667085;
-    border: 2px solid #667085;
-    border-radius: 50%;
-    right: 100px;
-    top: 250px;
   }
 }
 
@@ -261,24 +331,37 @@
     padding-right: 8rem;
   }
 
-  .nav-item {
+  .nav-item, .nav-link{
     padding: 0 20px 0 20px;
+    text-align: center;
   }
+
   #home-link {
     width: 100px;
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black !important;
+    -webkit-text-stroke: 2px #344054;
+    border: #021e35;
+
   }
+
   
   /* Hero Section */
 
-  .hero-radial-bg {
-    padding: 100px 136px;
-    background: radial-gradient(#e4ecf4, #f4f4f4);
+    /* Hero section*/
+  
+    .hero-section {
+      padding: 50px 136px;
+      z-index: 2;
+    }
+
+  .wrapper {
+    background: radial-gradient(circle, rgba(201,210,221,1) 0%, rgba(237,241,244,1) 30%, white 100%);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -1;
     position: relative;
+    padding-bottom: 8%;
+
   }
 
   .usp-header {
@@ -298,6 +381,15 @@
     padding-top: 20%;
   }
 
+  /* Rectangle background */
+
+  .rectangle-bg {
+    position: absolute;
+    z-index: 0;
+    height : 100%;
+    left: 60%
+  }
+
   /* Car Carousel */
 
   .carousel-control-prev-icon {
@@ -305,8 +397,8 @@
     color: #667085;
     border: 2px solid #667085;
     border-radius: 50%;
-    right: -130px;
-    top: 350px;
+    right: -160px;
+    top: 400px;
   }
   
   .carousel-control-next-icon {
@@ -314,12 +406,12 @@
     color: #667085;
     border: 2px solid #667085;
     border-radius: 50%;
-    right: 130px;
-    top: 350px;
+    right: 160px;
+    top: 400px;
   }
 
-  .mobiling-section, .about-section {
-    padding: 30px 136px;
+  .mobiling-section {
+    padding: 50px 136px;
   }
 
   .mobiling-body {
@@ -334,6 +426,13 @@
     width: 70%;
   }
   
+  .about-section {
+    padding: 0 136px 50px;
+  }
+
+  footer {
+    padding: 50px 136px 20px;
+  }
 
   
 }

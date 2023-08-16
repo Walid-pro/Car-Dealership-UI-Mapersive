@@ -6,10 +6,26 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import Image from "react-bootstrap/Image"
+import star from "../Assets/svg/star.svg"
+import { useEffect } from "react"
+
 
 function Hero() {
+
+    useEffect(() => {
+        // Get text
+        const text = document.querySelector(".curved-text p");
+        // Split text
+        text.innerHTML = text.innerText.split("").map(
+            (char, i) =>
+            `<span style="transform:rotate(${i * 8.5}deg)">${char}</span>`
+        ).join("")
+    })
+
+
   return (
-    <div className="hero-radial-bg">
+    <div className="hero-section">
       <Row>
         <Col lg="6">
           <Stack gap={3}>
@@ -17,7 +33,7 @@ function Hero() {
               <p class="usp-header">Best Car For Your Performance</p>
             </div>
             <div className="p-2">
-              <p class="usp-subheading">
+              <p className="usp-subheading">
                 We will serve you to get dream car here easily and quickly that
                 is reliable
               </p>
@@ -30,9 +46,10 @@ function Hero() {
                 >
                   <Form.Control
                     type="text"
+                    id="search-input"
                     className="flex-fill"
                     placeholder="search"
-                    style={{ borderRadius: "8px 0 0 8px" }}
+                    style={{ borderRadius: "8px 0 0 8px" , padding: "10px 0"}}
                   />
                   <Button
                     variant="primary"
@@ -74,14 +91,22 @@ function Hero() {
           </Stack>
         </Col>
         <Col lg="6" className="car-container">
+        
           <div className="d-flex flex-column position-relative">
             <p
               className="position-absolute top-0 start-50 translate-middle"
-              style={{ margin: "15% 0" }}
+              style={{ margin: "5% 0" }}
             >
-              Best Car For Your Performance
+              {/* <Image src={curvedText} /> */}
+              <div className="circle-bg">
+                <Image src={star} className="star-icon"/>
+                <div className="curved-text">
+                    <p>FOR TIME ROAD AHEAD BUILT</p>
+                </div>
+              </div>
+
             </p>
-            <CarSlider className="car-slider " />
+            <CarSlider className="car-slider z-5" />
           </div>
         </Col>
       </Row>

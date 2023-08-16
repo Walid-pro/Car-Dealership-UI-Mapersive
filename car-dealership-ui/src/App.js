@@ -8,11 +8,14 @@ import Hero from "./components/Hero";
 import Mobiling from "./components/Mobiling"
 import About from "./components/About"
 import Rectangle from "./Assets/rectangle-bg.png"
+import Footer from "./components/Footer"
+import Image from "react-bootstrap/Image"
 
 function App() {
   return (
     <div className="App">
-    <div className="wrapper" style={{ backgroundImage:`url(${Rectangle})`}}>
+      <div className="wrapper">
+      <Image src={Rectangle} className="rectangle-bg" />
       <header className="App-header">
         <NavBar />
       </header>
@@ -20,6 +23,7 @@ function App() {
       </div>
       <Mobiling />
       <About />
+      <Footer/>
 
     </div>
   );
