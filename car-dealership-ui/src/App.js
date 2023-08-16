@@ -11,19 +11,22 @@ import Rectangle from "./Assets/rectangle-bg.png";
 import Footer from "./components/Footer";
 import Image from "react-bootstrap/Image";
 
-function App() {
+function App({ Link }) {
+
+  const homeLink="https://walid-pro.github.io/car-dealership-react-app/"
+
   return (
     <div className="App">
       <div className="wrapper">
         <Image src={Rectangle} className="rectangle-bg" />
         <header className="App-header">
-          <NavBar />
+          <NavBar Link={homeLink}/>
         </header>
         <Hero />
       </div>
-      <Mobiling />
+      <Mobiling Link={homeLink}/>
       <About />
-      <Footer />
+      <Footer Link={homeLink}/>
     </div>
   );
 }

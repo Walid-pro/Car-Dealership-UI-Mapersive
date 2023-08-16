@@ -43,7 +43,7 @@ function Hero() {
               <Form id="search-form">
                 <Form.Group
                   className="mb-3 d-flex flex-row"
-                  controlId="exampleForm.ControlInput1"
+
                 >
                   <Form.Control
                     type="text"
@@ -100,7 +100,6 @@ function Hero() {
               className="position-absolute top-0 start-50 translate-middle"
               style={{ margin: "5% 0" }}
             >
-              {/* <Image src={curvedText} /> */}
               <div className="circle-bg">
                 <Image src={star} className="star-icon" />
                 <div className="curved-text">

@@ -11,28 +11,28 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import globeIcon from "../Assets/icons/globe.png";
 import { useEffect } from "react";
 
-function Footer() {
+function Footer({ Link }) {
 
-  const homeLink = "car-dealership-react-app/"
+
   const socialLinks = [
     {
       id: "1",
-      href: homeLink,
+      href: Link,
       icon: twitterIcon,
     },
     {
       id: "2",
-      href: homeLink,
+      href: Link,
       icon: facebookIcon,
     },
     {
       id: "3",
-      href: homeLink,
+      href: Link,
       icon: linkedinIcon,
     },
     {
       id: "4",
-      href: homeLink,
+      href: Link,
       icon: instagramIcon,
     },
   ];
@@ -78,17 +78,17 @@ function Footer() {
           <div className="d-flex flex-column mb-3">
             <div className="p-2 footer-section">Buy Vehicle</div>
             <div className="p-2">
-              <a className="footer-link" href={homeLink}>
+              <a className="footer-link" href={Link}>
                 Find new car
               </a>
             </div>
             <div className="p-2">
-              <a className="footer-link" href={homeLink}>
+              <a className="footer-link" href={Link}>
                 Current vehicle offers
               </a>
             </div>
             <div className="p-2">
-              <a className="footer-link" href={homeLink}>
+              <a className="footer-link" href={Link}>
                 Price lists & brochures
               </a>
             </div>
@@ -98,17 +98,17 @@ function Footer() {
           <div className="d-flex flex-column mb-3">
             <div className="p-2 footer-section">Purchase advice</div>
             <div className="p-2">
-              <a className="footer-link" href={homeLink}>
+              <a className="footer-link" href={Link}>
                 Book a test drive
               </a>
             </div>
             <div className="p-2">
-              <a className="footer-link" href={homeLink}>
+              <a className="footer-link" href={Link}>
                 Find a dealer near you
               </a>
             </div>
             <div className="p-2">
-              <a className="footer-link" href={homeLink}>
+              <a className="footer-link" href={Link}>
                 Find used vehicles
               </a>
             </div>
@@ -118,32 +118,32 @@ function Footer() {
           <div className="d-flex flex-column mb-3">
             <div className="p-2 footer-section">Customer Service</div>
             <div className="p-2">
-              <a className="footer-link" href={homeLink}>
+              <a className="footer-link" href={Link}>
                 Current service offers
               </a>
             </div>
             <div className="p-2">
-              <a className="footer-link" href={homeLink}>
+              <a className="footer-link" href={Link}>
                 Online service campaign VIN-checker
               </a>
             </div>
             <div className="p-2">
-              <a className="footer-link" href={homeLink}>
+              <a className="footer-link" href={Link}>
                 5 Year staf service
               </a>
             </div>
             <div className="p-2">
-              <a className="footer-link" href={homeLink}>
+              <a className="footer-link" href={Link}>
                 24h roadside assistance
               </a>
             </div>
             <div className="p-2">
-              <a className="footer-link" href={homeLink}>
+              <a className="footer-link" href={Link}>
                 New and events
               </a>
             </div>
             <div className="p-2">
-              <a className="footer-link" href={homeLink}>
+              <a className="footer-link" href={Link}>
                 Press relase
               </a>
             </div>
@@ -163,7 +163,7 @@ function Footer() {
         <Col xs={6} md={3} lg={2}>
           <div className="d-flex flex-column mb-3">
             <div className="p-2 footer-section">
-              <a className="footer-link" href={homeLink}>
+              <a className="footer-link" href={Link}>
                 Terms of Service
               </a>
             </div>
@@ -172,7 +172,7 @@ function Footer() {
         <Col xs={6} md={3} lg={2}>
           <div className="d-flex flex-column mb-3">
             <div className="p-2 footer-section">
-              <a className="footer-link" href={homeLink}>
+              <a className="footer-link" href={Link}>
                 Privacy Policy
               </a>
             </div>
@@ -181,7 +181,7 @@ function Footer() {
         <Col xs={6} md={3} lg={2}>
           <div className="d-flex flex-column mb-3">
             <div className="p-2 footer-section">
-              <a className="footer-link" href={homeLink}>
+              <a className="footer-link" href={Link}>
                 Cookies
               </a>
             </div>
@@ -191,11 +191,11 @@ function Footer() {
           <div className="d-flex flex-column mb-3">
             <div className="p-2 footer-section">
               <span className="footer-link">
-                <a className="footer-link" href={homeLink}>
+                <a className="footer-link" href={Link}>
                   <Image src={globeIcon} className="me-2" />
                 </a>
                 <span>English</span>
-                <a className="footer-link" href={homeLink}>
+                <a className="footer-link" href={Link}>
                   <FontAwesomeIcon icon={faArrowRight} className="ms-2" />
                 </a>
               </span>

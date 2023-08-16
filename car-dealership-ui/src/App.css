@@ -26,6 +26,14 @@
   position: relative;
 }
 
+.rectangle-bg {
+  position: absolute;
+  z-index: 0;
+  height: 100%;
+  left: 60%;
+  z-index: 0;
+}
+
 /* Navbar links */
 
 .nav-link {
@@ -333,9 +341,9 @@ footer {
 
   /* Rectangle background */
 
-  .rectangle-bg {
+  /* .rectangle-bg {
     display: none;
-  }
+  } */
 
   #home-link {
     width: 100px;
@@ -414,13 +422,6 @@ footer {
   }
 
   /* Rectangle background */
-
-  .rectangle-bg {
-    position: absolute;
-    z-index: 0;
-    height: 100%;
-    left: 60%;
-  }
 
   .hero-section {
     padding: 50px 136px;

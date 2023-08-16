@@ -6,7 +6,10 @@ import Button from "react-bootstrap/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
-function Mobiling() {
+function Mobiling({ Link }) {
+
+  
+
   return (
     <div className="mobiling-section">
       <Row style={{ margin: "0px 0px 20px 0px" }}>
@@ -37,11 +40,11 @@ function Mobiling() {
                   </p>
                 </div>
                 <div className="px-2 mobiling-btn-box">
-                  <Button className="mobiling-btn mb-4 me-2 p-2">
+                  <Button className="mobiling-btn mb-4 me-2 p-2" href={Link}>
                     <FontAwesomeIcon icon={faChevronRight} className="me-3" />
                     <span>Agree</span>
                   </Button>{" "}
-                  <Button className="mobiling-btn mb-4 p-2">
+                  <Button className="mobiling-btn mb-4 p-2" href={Link}>
                     <FontAwesomeIcon icon={faChevronRight} className="me-3" />
                     <span>Information on data privacy</span>
                   </Button>
