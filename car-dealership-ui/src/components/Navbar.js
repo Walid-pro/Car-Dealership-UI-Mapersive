@@ -24,7 +24,7 @@ function NavBar({ Link }) {
             navbarScroll
           >
             <Nav.Link id="home-link" href={Link}>
-              Home
+              <p>Home</p>
             </Nav.Link>
             <NavDropdown title="Service" id="navbarScrollingDropdown">
               <NavDropdown.Item href={Link}>Service01</NavDropdown.Item>
