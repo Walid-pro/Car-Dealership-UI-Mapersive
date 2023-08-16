@@ -22,6 +22,7 @@ I used `React`, `html`, `css` and `Bootstrap` to build this project.
 
 ## Setup
 - download or clone the repository on your local machine
+- run `cd .\car-dealership-ui\` to land on the project main folder
 - run `npm install` in order to have all dependencies installed on node modules folder
 - run `npm start`to start the React application
 
