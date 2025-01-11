@@ -37,6 +37,9 @@ function Footer({ Link }) {
     },
   ];
 
+  const currentDate = new Date();
+  const currentYear = currentDate.getFullYear();
+
   useEffect(() => {
     // Move copyright to normal position on lg breakpoint
     if (window.matchMedia("(min-width: 992px)").matches) {
@@ -156,7 +159,7 @@ function Footer({ Link }) {
         <Col xs={12} md={12} lg={4}>
           <div className="d-flex flex-column mb-3">
             <div id="lg-copyright" className="p-2 footer-section">
-              <span className="footer-link">Copyright 2023 Mobiling Co.</span>
+              <span className="footer-link">Copyright {currentYear} Mobiling Co.</span>
             </div>
           </div>
         </Col>
@@ -206,7 +209,7 @@ function Footer({ Link }) {
         <Col id="sm-copyright" xs={12} lg={4}>
           <div className="d-flex flex-column mb-3">
             <div className="p-2 footer-section">
-              <span className="footer-link">Copyright 2023 Mobiling Co.</span>
+              <span className="footer-link">Copyright {currentYear} Mobiling Co.</span>
             </div>
           </div>
         </Col>
